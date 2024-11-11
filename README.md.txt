@@ -28,3 +28,26 @@ Update pakage.json and run command ==> npm start
 "scripts": {
   	"start": "babel-node index.js"
 },
+
+6. ORM Tool Prisma ==>
+
+npm install prisma --save-dev
+npx prisma
+npx prisma init
+define schema in schema.prisma in prisma directory
+npx prisma generator
+npx prisma migrate dev ==> Give migration name
+
+Run prisma studio commnd ==> npx prisma studio
+Prisma Studio is up on http://localhost:5555
+
+npx prisma studio --experimental
+
+7. image upload ==>
+Image Storage: Instead of storing image data in the database, 
+store images in a file storage service (like Amazon S3, Google Cloud Storage) or a content delivery network (CDN) and 
+store the URL or path to the image in the database.
+
+https://chatgpt.com/share/c31b11d7-fea6-4df8-ac3d-f2c7105a92d3
+
+https://medium.com/@hassaanistic/best-way-to-store-image-in-any-web-application-development-best-practices-and-considerations-4fbacdf066d2
